@@ -1,0 +1,317 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color:#fff;
+    color: #fff;
+    font-family: 'Ubuntu',sans-serif;
+    margin: 5%;
+}
+
+header{
+    text-align:center;
+    background-color: #191f35;
+}
+
+/*Estilos para los titulos*/
+header h1,
+header h2{
+    font-weight: normal;/*grosor de la letra*/
+    line-height: 1;/*interlineado*/
+}
+
+header h2{
+    margin-top: 5px; /*margen arriba*/
+    opacity: 0.5; /*opacidad*/
+}
+
+h1{
+    font-size: 4em;/*tamaño de la fuente*/
+}
+
+h2{
+    font-size: 1.5em;/*tamaño de la fuente*/
+}
+
+h3{
+    font-size: 1.5em;/*tamaño de la fuente*/
+    margin-bottom: 1%;/*margen debajo del subtitulo h3*/
+}
+
+h4{
+    margin-top: 5%;/*margen superior*/
+}
+
+/*Estilos para los iconos*/
+.perfil i{
+    font-size: 0.8em;
+    color: #2702f9;
+    background: #fff;/*fondo del icono*/
+    border-radius: 2em;/*forma circular del icono*/
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;/*proporcion del circulo*/
+    text-align: center;/*centrar icono*/
+    vertical-align: center;/*mantenga de manera horizontal*/
+    line-height: 1.5em; /*centrado del icono*/
+}
+
+
+.experiencia i{
+    font-size: 0.8em;
+    color: #fff;
+    background: #2702f9;/*fondo del icono*/
+    border-radius: 2em;/*forma circular del icono*/
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;/*proporcion del circulo*/
+    text-align: center;/*centrar icono*/
+    vertical-align: center;/*mantenga de manera horizontal*/
+    line-height: 1.5em; /*centrado del icono*/
+}
+
+.contenedor{
+   background-color: #1f253d; 
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+   width: 80%;
+   margin: 0 auto;/*centrado*/
+   position:relative;
+   z-index: 1;
+}
+
+.cabecera{
+    position: relative;
+}
+
+/*Estilos de imagen de fondo atras de foto de perfil*/
+.cabecera ::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/foto-gratis/encendido-computadora-portatil-gris_400718-47.jpg?t=st=1732406557~exp=1732410157~hmac=9795928dd6bab64089237bdfc51efacda33e8543de651844e852431f816b5d13&w=826);/*ruta de la imagen*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;/*opacidad del 50% de la imagen de fondo*/
+    z-index: -1;
+}
+
+/*estilos foto de perfil*/
+.img-foto-perfil{
+    width: 280px;/*ancho inicial del contenedor*/
+    height: 280px;/*altura inicial del contenedor*/
+    border-radius: 50%;/*borde para redondear la imagen de perfil*/
+    overflow: hidden;/*oculta cualquier parte de la imagen que se salga contenedor*/
+    display: inline-block;
+    vertical-align: middle;
+    border: 7px solid #2702f9;/*borde color*/
+    margin: 5%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.img-foto-perfil img{
+    width: 100%;/*100% del ancho del contenedor imagen*/
+    height: auto;/*altura para mantener proporcion*/
+    display: block;/*la imagen se comporta como un bloque para evitar espacios*/
+}
+
+/*estilos de nombre presentacion*/
+
+.nombre_presentacion{
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 1%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contenido_cv{
+    display: flex;
+    width: 100%;
+}
+
+/*estilos del bloque perfil*/
+.perfil{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #2702f9;
+    padding:5%;
+    width:28%;
+}
+
+/*estilos de la lista contacto*/
+
+.perfil ul{
+    margin-left: 5%;
+}
+
+.carta_presentacion{
+    text-align: justify;
+}
+
+.grafico {
+    width: 34px;/*modifica el tamaño del grafico*/
+    height: 34px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;/*no se vean los elementos fuera del circulo*/
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1%;
+}
+
+.donut-hole{
+    position: absolute;
+    width: 60%;/*cambia el tamaño del agujero*/
+    height: 60%;/*cambia el tamaño del agujero*/
+    background-color: #2702f9;/*color centro de la rosquilla*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 1;/*colocamos el centro por debajo de los sectores del grafico*/
+}
+
+.sector{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    transform-origin: left;
+}
+
+#sector1{
+    transform: rotate(0deg);/*rotacion*/
+    background-color: #f91c8a;/*color sector 1*/
+}
+
+#sector2{
+    transform: rotate(120deg);/*rotacion*/
+    background-color: #2d0b7c;/*color sector 1*/
+}
+
+#sector3{
+    transform: rotate(240deg);/*rotacion*/
+    background-color: #58d1bc;/*color sector 1*/
+}
+
+.habilidad{
+    display: inline-block;
+    margin-top: 1%;
+    vertical-align: middle;
+}
+
+.experiencia{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    width: 50%;
+}
+
+.experiencia h3{
+    text-align: right;
+}
+
+.nombre_empresa{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.año_puesto{
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 49%;
+}
+
+.descripcion_puesto{
+    margin-top: 3%;
+    text-align: justify;
+}
+
+.nombre_instituto{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.año_curso{
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 49%;
+}
+
+.descripcion_curso{
+    margin-top: 3%;
+    text-align: justify;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #191f35;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    z-index: 1;
+    border-top: 3px solid #2702f9;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #191f35;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    z-index: 1;
+    border-top: 3px solid #2702f9;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Efecto hover para el texto del footer */
+footer p:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Media query para hacer el footer responsive */
+@media screen and (max-width: 768px) {
+    footer {
+        width: 90%;
+        padding: 15px 0;
+    }
+    
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+    footer {
+        width: 95%;
+        padding: 10px 0;
+    }
+}
