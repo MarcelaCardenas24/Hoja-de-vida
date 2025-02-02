@@ -216,12 +216,6 @@ h4{
     text-align: right;
 }
 
-.nombre_empresa{
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-}
-
 .año_proyecto{
     display: inline-block;
     vertical-align: top;
