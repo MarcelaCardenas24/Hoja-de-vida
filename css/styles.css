@@ -222,14 +222,14 @@ h4{
     width: 50%;
 }
 
-.año_puesto{
+.año_proyecto{
     display: inline-block;
     vertical-align: top;
     text-align: right;
     width: 49%;
 }
 
-.descripcion_puesto{
+.descripcion_proyecto{
     margin-top: 3%;
     text-align: justify;
 }
