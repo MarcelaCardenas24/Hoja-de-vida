@@ -216,10 +216,6 @@ h4{
     text-align: right;
 }
 
-.nombre_proyecto h3{
-    text-align: left;
-}
-
 .nombre_empresa{
     display: inline-block;
     vertical-align: top;
